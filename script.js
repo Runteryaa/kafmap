@@ -5,14 +5,25 @@ navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
 });
 
 function successLocation(position) {
-  loadCafesAndSetupMap([position.coords.longitude, position.coords.latitude]);
+    loadDataAndSetupMap([position.coords.longitude, position.coords.latitude]);
 }
 
 function errorLocation() {
-  loadCafesAndSetupMap([32.854038, 39.920863]);
+  fetch('https://ip-api.io/json')
+    .then(res => res.json())
+    .then(data => {
+      if (data && typeof data.longitude === 'number' && typeof data.latitude === 'number') {
+        loadDataAndSetupMap([data.longitude, data.latitude]);
+      } else {
+        loadDataAndSetupMap([32.854038, 39.920863]);
+      }
+    })
+    .catch(() => {
+        loadDataAndSetupMap([32.854038, 39.920863]);
+    });
 }
 
-function loadCafesAndSetupMap(center) {
+function loadDataAndSetupMap(center) {
   fetch('/data.json')
     .then(res => res.json())
     .then(cafes => setupMap(center, cafes));
@@ -26,9 +37,7 @@ function setupMap(center, cafes) {
     zoom: 14
   });
 
-  // Hide default POI labels after style loads
   map.on('style.load', () => {
-    // Hide all POI (Point of Interest) labels
     const layers = map.getStyle().layers;
     layers.forEach(layer => {
       if (
@@ -51,13 +60,11 @@ function setupMap(center, cafes) {
       typeof cafe.lat === 'number' && !isNaN(cafe.lat) &&
       typeof cafe.lng === 'number' && !isNaN(cafe.lng)
     ) {
-      // Create a marker element with a label
       const el = document.createElement('div');
       el.style.display = 'flex';
       el.style.flexDirection = 'column';
       el.style.alignItems = 'center';
 
-      // Marker icon based on type
       const markerIcon = document.createElement('div');
       markerIcon.style.width = '32px';
       markerIcon.style.height = '32px';
@@ -66,7 +73,6 @@ function setupMap(center, cafes) {
       markerIcon.style.justifyContent = 'center';
       markerIcon.style.fontSize = '28px';
 
-      // Choose icon by type
       if (cafe.type === 'cafe') {
         markerIcon.textContent = '☕';
       } else if (cafe.type === 'grocery') {
@@ -76,7 +82,6 @@ function setupMap(center, cafes) {
       }
       el.appendChild(markerIcon);
 
-      // Label
       const label = document.createElement('div');
       label.textContent = cafe.name;
       label.style.background = 'rgba(255,255,255,0.9)';
@@ -100,6 +105,7 @@ function setupMap(center, cafes) {
           <p><strong>WiFi Şifresi:</strong> ${cafe.wifi}</p>
           <p><strong>WC Şifresi:</strong> ${cafe.wc}</p>
           <p><strong>Comments:</strong> ${cafe.comments || 'No comments yet.'}</p>
+          ${cafe.menu ? `<p><a href="${cafe.menu}" target="_blank" style="color:#0074d9;">📋 Menüye Git</a></p>` : ''}
           <button onclick="window.open('${googleUrl}', '_blank')">Google Maps'te Aç</button>
         `;
         document.getElementById('burgerbar').style.display = 'block';
@@ -107,7 +113,6 @@ function setupMap(center, cafes) {
     }
   });
 
-  // Close burger bar
   document.getElementById('closeBurger').onclick = function() {
     document.getElementById('burgerbar').style.display = 'none';
   }
