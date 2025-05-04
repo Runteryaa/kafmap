@@ -7,7 +7,8 @@
       "wifi": "",
       "wc": "elm adam  3 33",
       "menu": "https://www.felicita.com.tr/menuler/",
-      "googledata": "data=!4m6!3m5!1s0x14d33e5a22c00ce1:0x3908add6ec7f2b70!8m2!3d39.8293808!4d32.6604243!16s%2Fg%2F11gdt5nnf4"
+      "googledata": "data=!4m6!3m5!1s0x14d33e5a22c00ce1:0x3908add6ec7f2b70!8m2!3d39.8293808!4d32.6604243!16s%2Fg%2F11gdt5nnf4",
+      "tags": ["photoshoot", "delizioso"]
     },
     {
       "name": "Kosmos Gıda Maddeleri",
@@ -15,6 +16,7 @@
       "lat": 39.8294171,
       "lng": 32.6606167,
       "wifi": "studyhard",
-      "wc": "cleanWC1"
+      "wc": "cleanWC1",
+      "tags": ["delizioso"]
     }
   ]
