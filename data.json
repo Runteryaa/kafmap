@@ -18,5 +18,13 @@
       "wifi": "studyhard",
       "wc": "cleanWC1",
       "tags": ["delizioso"]
+    },
+    {
+        "name": "Burger King",
+        "type": "fastfood",
+        "lat": 39.9321784,
+        "lng": 32.8280941,
+        "wc": "1997"
+        "googledata": "data=!4m6!3m5!1s0x14d34f92a2ef2c83:0x93560b46b3a63237!8m2!3d39.9321784!4d32.8280941!16s%2Fg%2F11stsr54w9"
     }
   ]
