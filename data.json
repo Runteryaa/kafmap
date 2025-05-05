@@ -8,7 +8,12 @@
         "wc": "",
         "menu": "",
         "googledata": "data=!4m6!3m5!1s0x14d33e5a22c00ce1:0x3908add6ec7f2b70!8m2!3d39.8293808!4d32.6604243!16s%2Fg%2F11gdt5nnf4",
-        "tags": ["photoshoot", "delizioso", "cleanwc"]
+        "tags": ["photoshoot", "delizioso", "cleanwc"],
+        "photos": [
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/1b/0c/4f/2d/felicita-kafe-firin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/1b/0c/4f/2d/felicita-kafe-firin.jpg"
+        ]
     },
     {
         "name": "Kosmos Gıda Maddeleri",
@@ -39,5 +44,41 @@
         "menu": "",
         "googledata": "data=!3m1!4b1!4m6!3m5!1s0x14d34ffa1b7f5631:0x9d69d308c18ddfaa!8m2!3d39.9312606!4d32.8263967!16s%2Fg%2F11whjq4x5c",
         "tags": ["photoshoot", "delizioso", "cleanwc"]
+    },
+    {
+        "name": "Visscoffee",
+        "type": "cafe",
+        "lat": 39.9748746,
+        "lng": 32.8811919,
+        "wifi": "",
+        "wc": "",
+        "menu": "a",
+        "googledata": "data=!4m10!1m2!2m1!1scafe!3m6!1s0x14d34db30a8b63d1:0xe049ef4c7e5c7932!8m2!3d39.9748747!4d32.8839839!15sCgRjYWZlWgYiBGNhZmWSAQRjYWZlqgFBCgkvbS8wMnZxZm0QASoIIgRjYWZlKAAyHhABIhrZXfRKLSbUKpseT2lPvvTBpYUQT8T3RvKr1zIIEAIiBGNhZmXgAQA!16s%2Fg%2F11k6yctw7s",
+        "tags": ["photoshoot", "delizioso", "cleanwc"],
+        "photos": [
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg"
+        ]
+    },
+    {
+        "name": "McDonald's",
+        "type": "fastfood",
+        "lat": 40.000281,
+        "lng": 32.642922,
+        "wifi": "",
+        "wc": "",
+        "menu": "menu",
+        "googledata": "data=!4m9!1m2!2m1!1sCAFE!3m5!1s0x14d3375f5b2ebe67:0xdade95e7777501d5!8m2!3d40.0000207!4d32.6428912!16s%2Fg%2F11y4vdc9dp",
+        "tags": ["delizioso", "cleanwc"],
+        "photos": [
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg",
+            "https://yillik75.onrender.com/placeholder.svg"
+        ]
     }
 ]
