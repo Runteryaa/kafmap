@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="map"></div>
-  <div style="margin-bottom:12px;display:flex;gap:12px;align-items:center;">
-    <input id="searchInput" type="text" placeholder="Yer adı ara..." style="padding:6px 12px; font-size:16px; width:180px;">
-    <select id="typeFilter" style="padding:6px 12px; font-size:16px;">
-      <option value="">Tüm Türler</option>
-      <option value="cafe">Cafe</option>
-      <option value="grocery">Grocery</option>
-    </select>
-    <select id="tagFilter" style="padding:6px 12px; font-size:16px;">
-      <option value="">Tüm Etiketler</option>
-    </select>
+  <div class="search">
+    <input id="searchbar" type="text" placeholder="Yer adı ara..." style="padding:6px 12px; font-size:16px; width:180px;">
+    <div class="filters">
+      <select id="typeFilter" style="padding:6px 12px; font-size:16px;">
+        <option value="">Tüm Türler</option>
+        <option value="cafe">Cafe</option>
+        <option value="grocery">Grocery</option>
+      </select>
+      <select id="tagFilter" style="padding:6px 12px; font-size:16px;">
+        <option value="">Tüm Etiketler</option>
+      </select>
+    </div>
   </div>
+  <div id="map"></div>
   <div id="burgerbar" style="display:none; position:fixed; right:0; top:0; width:300px; height:100%; background:#fff; box-shadow:-2px 0 8px rgba(0,0,0,0.2); z-index:9999; padding:24px; overflow:auto;">
     <button id="closeBurger" style="float:right;">✖</button>
     <div id="burgerContent"></div>

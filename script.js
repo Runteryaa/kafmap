@@ -54,9 +54,8 @@ function setupMap(center, cafes) {
     });
   });
 
-  new mapboxgl.Marker({ color: 'blue' })
+  new mapboxgl.Marker({ color: 'brown' })
     .setLngLat(center)
-    .setPopup(new mapboxgl.Popup().setHTML('<h4>You</h4>'))
     .addTo(map);
 
   allCafes = cafes;
@@ -100,8 +99,12 @@ function renderMarkers() {
 
         if (cafe.type === 'cafe') {
           markerIcon.textContent = '☕';
-        } else if (cafe.type === 'grocery') {
-          markerIcon.textContent = '🛒';
+        } else if (cafe.type === 'store') {
+            markerIcon.textContent = '🛒';
+        } else if (cafe.type === 'pub') {
+            markerIcon.textContent = '🍻';
+        } else if (cafe.type === 'fastfood') {
+            markerIcon.textContent = '🍔';
         } else {
           markerIcon.textContent = '📍';
         }

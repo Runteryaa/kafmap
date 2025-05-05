@@ -1,30 +1,43 @@
 [
     {
-      "name": "Felicita Kafe Fırın",
-      "type": "cafe",
-      "lat": 39.8294010, 
-      "lng": 32.6603645,
-      "wifi": "",
-      "wc": "elm adam  3 33",
-      "menu": "https://www.felicita.com.tr/menuler/",
-      "googledata": "data=!4m6!3m5!1s0x14d33e5a22c00ce1:0x3908add6ec7f2b70!8m2!3d39.8293808!4d32.6604243!16s%2Fg%2F11gdt5nnf4",
-      "tags": ["photoshoot", "delizioso"]
+        "name": "Felicita Kafe Fırın",
+        "type": "cafe",
+        "lat": 39.8294010, 
+        "lng": 32.6603645,
+        "wifi": "felicita",
+        "wc": "",
+        "menu": "",
+        "googledata": "data=!4m6!3m5!1s0x14d33e5a22c00ce1:0x3908add6ec7f2b70!8m2!3d39.8293808!4d32.6604243!16s%2Fg%2F11gdt5nnf4",
+        "tags": ["photoshoot", "delizioso", "cleanwc"]
     },
     {
-      "name": "Kosmos Gıda Maddeleri",
-      "type": "grocery",
-      "lat": 39.8294171,
-      "lng": 32.6606167,
-      "wifi": "studyhard",
-      "wc": "cleanWC1",
-      "tags": ["delizioso"]
+        "name": "Kosmos Gıda Maddeleri",
+        "type": "grocery",
+        "lat": 39.8294171,
+        "lng": 32.6606167,
+        "wifi": "",
+        "wc": "",
+        "tags": ["delizioso"]
     },
     {
         "name": "Burger King",
         "type": "fastfood",
         "lat": 39.9321784,
         "lng": 32.8280941,
-        "wc": "1997"
-        "googledata": "data=!4m6!3m5!1s0x14d34f92a2ef2c83:0x93560b46b3a63237!8m2!3d39.9321784!4d32.8280941!16s%2Fg%2F11stsr54w9"
+        "wifi": "",
+        "wc": "1997",
+        "googledata": "data=!4m6!3m5!1s0x14d34f92a2ef2c83:0x93560b46b3a63237!8m2!3d39.9321784!4d32.8280941!16s%2Fg%2F11stsr54w9",
+        "tags": ["fastfood"]
+    },
+    {
+        "name": "GUA Coffee Company",
+        "type": "cafe",
+        "lat": 39.9312606,
+        "lng": 32.8263967,
+        "wifi": "GUA",
+        "wc": "1997",
+        "menu": "",
+        "googledata": "data=!3m1!4b1!4m6!3m5!1s0x14d34ffa1b7f5631:0x9d69d308c18ddfaa!8m2!3d39.9312606!4d32.8263967!16s%2Fg%2F11whjq4x5c",
+        "tags": ["photoshoot", "delizioso", "cleanwc"]
     }
-  ]
+]
