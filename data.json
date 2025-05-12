@@ -80,5 +80,12 @@
             "https://yillik75.onrender.com/placeholder.svg",
             "https://yillik75.onrender.com/placeholder.svg"
         ]
+    },
+    {
+        "name": "McDonald's",
+        "type": "fastfood",
+        "lat": 39.9321784,
+        "lng": "32.8280941",
+        "wc": "3434"
     }
 ]
