@@ -84,8 +84,9 @@
     {
         "name": "McDonald's",
         "type": "fastfood",
-        "lat": 39.9321784,
-        "lng": "32.8280941",
-        "wc": "3434"
+        "lat": 39.918331,
+        "lng": "32.855437",
+        "wc": "3434",
+        "googlemeta": "data=!4m6!3m5!1s0x14d34faac0ba0a9f:0xe55b94fc38426ca9!8m2!3d39.9183317!4d32.855437!16s%2Fg%2F1td8ff67"
     }
 ]
